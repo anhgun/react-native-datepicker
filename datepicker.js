@@ -362,11 +362,11 @@ class DatePicker extends Component {
             !this.props.hideText ?
               <View style={dateInputStyle}>
                 {this.getTitleElement()}
+                {this._renderIcon()}
               </View>
             :
               <View/>
           }
-          {this._renderIcon()}
           {Platform.OS === 'ios' && <Modal
             transparent={true}
             animationType="none"
